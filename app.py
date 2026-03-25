@@ -59,7 +59,7 @@ with col1:
 # --- COLUMN 2: PROBABILITIES (Monte Carlo) ---
 with col2:
     st.subheader("Kansberekening (%)")
-    num_simulations = st.slider("Aantal simulaties", 1000, 20000, 10000)
+    num_simulations = st.slider("Aantal simulaties", 1000, 100000, 50000)
     
     if st.button("Bereken Kansen 🚀"):
         results = {team: {"P1": 0, "P2": 0, "P8": 0} for team in initial_standings}
